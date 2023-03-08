@@ -98,6 +98,8 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'SQLite3' do |ss|
+      ss.tvos.deployment_target = '8.0'
+      
       ss.source_files = 'SJUIKit/SQLite3/*.{h,m}'
       
       ss.subspec 'Protocol' do |sss|
